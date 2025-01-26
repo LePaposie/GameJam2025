@@ -1080,7 +1080,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1920.0001, y: 1080}
+  m_SizeDelta: {x: 1920, y: 1262.2573}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538536173
 MonoBehaviour:
@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 621b4aabf2cccb14cafc90af924d4d3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b098c6203e6a81f4fa18b2d8f56ade47, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1212,8 +1212,9 @@ GameObject:
   - component: {fileID: 1898904955}
   - component: {fileID: 1898904954}
   - component: {fileID: 1898904953}
+  - component: {fileID: 1898904956}
   m_Layer: 5
-  m_Name: Button
+  m_Name: btnIniciar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1283,9 +1284,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 217421951}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayNowButton
+      - m_Target: {fileID: 1898904956}
+        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
+        m_MethodName: StartIntroduction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1333,6 +1334,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1898904951}
   m_CullTransparentMesh: 0
+--- !u!114 &1898904956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1898904951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ffe0a132832f746ab5ed75475ca7aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1900452048
 GameObject:
   m_ObjectHideFlags: 0
