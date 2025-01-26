@@ -15,6 +15,7 @@ public class PlayerControllerDef : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+
     private void Update()
     {
         rb.AddForce(direction * moveSpeed, ForceMode.Force);
